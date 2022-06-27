@@ -7,5 +7,6 @@
   :version "0.0.1"
   :serial t
   :components ((:mvn "io.activej/activej-eventloop")
+               (:mvn "io.activej/activej-launchers-http")
                (:file "package")
                (:file "abcl-activej")))
