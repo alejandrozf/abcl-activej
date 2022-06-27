@@ -21,6 +21,4 @@
     (java:jcall el-run-method event-loop))
 
   (defun stop-event-loop (event-loop)
-    (java:jcall el-run-method event-loop))
-
-  )
+    (java:jcall el-run-method event-loop)))
