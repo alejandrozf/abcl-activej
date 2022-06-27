@@ -5,7 +5,7 @@
 (let* ((el-create-method (java:jmethod "io.activej.eventloop.Eventloop" "create"))
        (el-post-method (java:jmethod "io.activej.eventloop.Eventloop" "post" "java.lang.Runnable"))
        (el-run-method (java:jmethod "io.activej.eventloop.Eventloop" "run"))
-       (el-keep-alive-method (java:jmethod "io.activej.eventloop.Eventloop" "keepAlive" "boolean"))
+       (el-keep-alive-method (java:jmethod "io.activej.eventloop.Eventloop" "keepAlive" "boolean")))
 
   (defun make-event-loop (&optional (keep-alive nil))
     (let ((event-loop (java:jstatic el-create-method "io.activej.eventloop.Eventloop")))
